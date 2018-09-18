@@ -16,3 +16,35 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
+This site works properly, however, if you try to insert a menu item without an `href`, like so:
+
+```
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+      menu: 
+      - text: "header"
+      - text: "Thing 1"
+        href: index.html
+      - text: "Thing 2"
+        href: index.html
+```
+
+Then the html does not show up properly in the RStudio Preview window, nor at Github pages. However, it does show up locally if I open using a browser.
+
+If I open the JavaScript console from the RStudio Preview window, it gives me this error:
+
+```
+Uncaught TypeError: Cannot read property 'replace' of undefined
+    at HTMLAnchorElement.<anonymous> (index.html:1182)
+    at Function.each (jquery.min.js:2)
+    at m.fn.init.each (jquery.min.js:2)
+    at init_common (index.html:1181)
+    at init_distill (index.html:875)
+    at yh (webcomponents.js:234)
+    at webcomponents.js:235
+```
+

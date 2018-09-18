@@ -9,4 +9,9 @@ navbar:
       href: index.html
     - text: "About"
       href: about.html
+      menu: 
+      - text: "Thing 1"
+        href: index.html
+      - text: "Thing 2"
+        href: index.html
 output: radix::radix_article
