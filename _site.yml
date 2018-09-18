@@ -10,6 +10,7 @@ navbar:
     - text: "About"
       href: about.html
       menu: 
+      - text: "header"
       - text: "Thing 1"
         href: index.html
       - text: "Thing 2"
