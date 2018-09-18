@@ -48,3 +48,7 @@ Uncaught TypeError: Cannot read property 'replace' of undefined
     at webcomponents.js:235
 ```
 
+Here are links to the working [site](https://ijlyttle.github.io/radixtest/) and [repository](https://github.com/ijlyttle/radixtest).
+
+Here are the links to the failiing [site](https://ijlyttle.github.io/radixtestfails/) and [repository](https://github.com/ijlyttle/radixtestfails).
+
